@@ -12,8 +12,8 @@ Dieses Repository enthält ein vollständiges Skript zur Einrichtung eines Arch-
 
 1. Clone this repository:
       ```bash
-      git clone https://github.com/<your-username>/arch-hyprland-setup.git
-      cd arch-hyprland-setup
+      git clone https://github.com/louisgundelwein/arch-setup.git
+      cd arch-setup
       ```
 2. Make the main script executable:
       ```bash 

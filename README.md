@@ -8,7 +8,6 @@ Dieses Repository enthält ein vollständiges Skript zur Einrichtung eines Arch-
 3. Root-Zugriff oder `sudo` konfiguriert.
 
 ## Installation
-```bash
 ### Steps
 
 1. Clone this repository:

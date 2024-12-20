@@ -1,8 +1,19 @@
-#!/bin/bash
+#!/bin/bas#!/bin/bash
 
-# Install Hyprland and related Wayland packages
-echo "Installing Hyprland and Wayland dependencies..."
-sudo pacman -S --noconfirm \
+# Install NVIDIA drivers and Wayland support
+echo "Installing NVIDIA drivers and Wayland dependencies..."
+sudo pacman -S --needed --noconfirm \
+  nvidia-dkms \
+  nvidia-utils \
+  nvidia-settings \
+  libglvnd \
+  egl-wayland \
+  mesa \
+  vulkan-icd-loader
+
+# Install Hyprland and its dependencies
+echo "Installing Hyprland and related Wayland tools..."
+sudo pacman -S --needed --noconfirm \
   hyprland \
   wayland \
   wayland-utils \
@@ -13,14 +24,7 @@ sudo pacman -S --noconfirm \
   swaybg \
   rofi \
   alacritty \
-  mesa \
-  sddm
+  waybar
 
-# Configure SDDM as the display manager
-echo "Enabling SDDM..."
-sudo systemctl enable sddm
-
-# Copy Hyprland configuration
-echo "Configuring Hyprland..."
-mkdir -p ~/.config/hypr
-cp configs/hyprland.conf ~/.config/hypr/hyprland.conf
+# Do not copy any custom configuration
+echo "Skipping custom Hyprland configuration. Default configuration will be used."

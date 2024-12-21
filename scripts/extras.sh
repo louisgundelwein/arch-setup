@@ -5,7 +5,7 @@
 echo "Installing additional utilities and dependencies..."
 
 # Install basic utilities
-sudo pacman -S --needed --noconfirm neofetch unzip unrar tar gzip bzip2 p7zip wl-clipboard thunar ttf-nerd-fonts-symbols openssh
+sudo pacman -S --needed --noconfirm neofetch unzip unrar tar gzip bzip2 p7zip wl-clipboard thunar ttf-nerd-fonts-symbols openssh fzf
 
 # Install fnm (Fast Node Manager)
 echo "Installing fnm..."

@@ -1,0 +1,47 @@
+
+* {
+    font-family: "Fira Code", monospace;
+    font-size: 12px;
+    color: #ffffff;
+    background: rgba(30, 30, 46, 0);
+    border: none;
+    padding: 0;
+}
+
+#cpu, #memory, #gpu, #battery, #clock, #workspaces {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#cpu {
+    background: rgba(94, 129, 172, 0.7);
+}
+
+#memory {
+    background: rgba(136, 192, 208, 0.7);
+}
+
+#gpu {
+    background: rgba(191, 97, 106, 0.7);
+}
+
+#battery {
+    background: rgba(235, 203, 139, 0.7);
+}
+
+#clock {
+    background: rgba(163, 190, 140, 0.7);
+}
+
+#workspaces {
+    background: rgba(208, 135, 112, 0.7);
+    margin: 0 ; /* Zentriert das Element innerhalb des Containers */
+
+}
+/* Transparenter Hintergrund für linke, rechte und mittlere Bereiche */
+#left,
+#right,
+#center {
+    background: transparent;
+}
+

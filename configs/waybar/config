@@ -1,0 +1,46 @@
+
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["cpu", "memory", "gpu"],
+    "modules-center": ["workspaces"],
+    "modules-right": ["clock", "battery"],
+
+    "cpu": {
+        "format": "CPU: {}%",
+        "interval": 5
+    },
+
+    "memory": {
+        "format": "RAM: {}%",
+        "interval": 5
+    },
+
+    "gpu": {
+        "format": "GPU: {}%",
+        "interval": 5,
+        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print $1}'"
+    },
+
+    "battery": {
+        "format": "Battery: {capacity}%",
+        "states": {
+            "good": 90,
+            "warning": 30,
+            "critical": 15
+        },
+        "hide-if-empty": true
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "interval": 1
+    },
+
+    "workspaces": {
+        "disable-scroll": true,
+        "format": "{name}",
+        "strip": 15
+    }
+}
+

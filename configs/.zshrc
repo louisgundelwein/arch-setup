@@ -1,4 +1,4 @@
-# Oh My Zsh configuratio# -----------------------------------------------
+# ------# -----------------------------------------------
 # Oh My Zsh Configuration
 # -----------------------------------------------
 export ZSH=$HOME/.oh-my-zsh
@@ -125,4 +125,4 @@ const response = await fetch('url', {
 # -----------------------------------------------
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+fio "imp

@@ -24,6 +24,10 @@ bash scripts/neovim.sh
 echo "Installing extra utilities..."
 bash scripts/extras.sh
 
+# Install yay and AUR applications
+echo "Installing yay and AUR applications..."
+bash scripts/yay_and_aur_apps.sh
+
 # Install and configure Zsh
 echo "Installing and configuring Zsh..."
 bash scripts/zsh.sh

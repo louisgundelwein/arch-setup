@@ -10,7 +10,6 @@ plugins=(
   zsh-syntax-highlighting # Highlights commands in Zsh
   zsh-autosuggestions     # Suggests commands based on history
   zsh-history-substring-search # Interactive substring search in history
-  autosuggestions         # Automatic suggestions
   sudo                    # Enable sudo with !! for last command
 )
 

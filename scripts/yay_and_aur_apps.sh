@@ -21,6 +21,7 @@ aur_apps=(
   "1password"              # Password manager
   "visual-studio-code-bin" # Visual Studio Code
   "spotify"                # Spotify client
+  "fnm"
 )
 
 for app in "${aur_apps[@]}"; do

@@ -28,6 +28,10 @@ bash scripts/extras.sh
 echo "Installing yay and AUR applications..."
 bash scripts/yay_and_aur_apps.sh
 
+# Installing waybar stuff
+echo "Installing waybar stuff..."
+bash scripts/waybar.sh
+
 # Install and configure Zsh
 echo "Installing and configuring Zsh..."
 bash scripts/zsh.sh

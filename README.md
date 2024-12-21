@@ -13,7 +13,7 @@ This repository contains a complete script to set up an Arch Linux system with *
 ## Installation
 
 ### Steps
-
+test
 1. Clone this repository:
    ```bash
    git clone https://github.com/<your-username>/arch-setup.git
